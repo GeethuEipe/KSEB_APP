@@ -1,0 +1,15 @@
+{
+  "LT-1A": {
+    "Domestic": {
+      "telescopic": [
+        { "upTo": 50, "charge": 2.8 },
+        { "upTo": 100, "charge": 3.2 },
+        { "upTo": 150, "charge": 4.2 },
+        { "upTo": 200, "charge": 5.8 },
+        { "upTo": 240, "charge": 7.0 }
+      ],
+      "nonTelescopic": 5.0,
+      "fixedCharge": 20
+    }
+  }
+}

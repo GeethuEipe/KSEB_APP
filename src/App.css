@@ -1,38 +1,156 @@
-.App {
+.bill-calculator {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-align: center;
+  padding: 20px;
+  background-color: #f7f7f7;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 7%;
+  padding-top: 60px;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  color: #fff !important;
+  background-color: #0395d9 !important;
+  font-size: 20px;
+  padding: 20px;
+  margin-top: 0;
+}
+.bill-calculator form {
+  background: #fff;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: left;
+  max-width: 40%;
+  width: 100%;
+}
+.bill-calculator label {
+  margin-bottom: 5px;
+  color: #333;
+  display: flex;
+  font-weight: bold;
+  margin-right: auto;
+  padding: 15px;
+  font-size: 15px;
+  align-items: center;
+}
+.bill-calculator select,
+.bill-calculator input[type='number'],
+.bill-calculator input[type='text'] {
+  margin-left: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 65%;
+  font-weight: normal;
+}
+.bill-calculator input[type='radio'] {
+  margin-left: 95px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.bill-calculator button {
+  color: #0395d9;
+  background-color: #fff;
+  border-color: #0395d9;
+  border-radius: 5px;
+  padding: 12px;
+  width: 20%;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+.bill-calculator button:hover {
+  background-color: #0395d9;
+  color: #fff;
+}
+.bill-details {
+  max-width: 40%;
+  width: 100%;
+  border-radius: 3px;
+  background-color: #fff;
+  margin-left: 50px;
+  font-size: 12px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bill-details h2 {
+  margin-top: 0;
+  padding: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .bill-calculator form {
+    max-width: 60%;
   }
-  to {
-    transform: rotate(360deg);
+  .bill-calculator button {
+    width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bill-calculator form {
+    max-width: 80%;
+  }
+  .bill-calculator select,
+  .bill-calculator input[type='number'],
+  .bill-calculator input[type='text'] {
+    margin-left: 20px;
+  }
+  /* .bill-calculator button {
+    width: 30%;
+    margin: 10px 10px;
+  } */
+  .bill-details {
+    margin-left: 0;
+    margin-top: 30px;
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .bill-calculator form {
+    max-width: 100%;
+  }
+  .bill-calculator label {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .bill-calculator select,
+  .bill-calculator input[type='number'],
+  .bill-calculator input[type='text'] {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  /* .bill-calculator button {
+    width: 50%;
+    margin: 10px 10px;
+  } */
+  .bill-details {
+    font-size: 14px;
+    margin-top: 30px;
+    max-width: 100%;
+  }
+}
+
+.bill-calculator input[type='radio'] {
+  margin-left: 95px; /* Default margin */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .bill-calculator input[type='radio'] {
+    margin-left: 20px; /* Adjusted margin for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .bill-calculator input[type='radio'] {
+    margin-left: 0; /* Adjusted margin for even smaller screens */
   }
 }
