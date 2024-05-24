@@ -11,7 +11,7 @@ function EnergyDetails({
     : ''
 
   return (
-    <section>
+    <section className="mb-10">
       <h1>Bill Details</h1>
       <h2 className="md:text-lg">
         Energy Charge (EC)*
@@ -33,7 +33,7 @@ function EnergyDetails({
                   EC Calculation
                 </td>
               </tr>
-              <tr className="border-b border-violet-500 border-opacity-30 px-4 py-2">
+              <tr className={borderClass}>
                 <th className="">Units</th>
                 <th className="">Rate</th>
                 <th className="">Amt</th>
